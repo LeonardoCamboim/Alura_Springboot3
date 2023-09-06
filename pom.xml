@@ -60,6 +60,7 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -75,6 +76,20 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.flywaydb</groupId>
+				<artifactId>flyway-maven-plugin</artifactId>
+				<version>9.22.0</version> <!-- Substitua pela versão mais recente -->
+				<executions>
+					<execution>
+						<id>repair</id>
+						<phase>package</phase> <!-- Escolha a fase do ciclo de vida do Maven onde deseja executar o repair -->
+						<goals>
+							<goal>repair</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

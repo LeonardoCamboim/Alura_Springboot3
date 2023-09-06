@@ -1,0 +1,19 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": "3",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.21.2",
+      "database": "vollmed_api",
+      "warnings": [],
+      "timestamp": "2023-09-06T09:05:15.724172400",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
